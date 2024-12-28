@@ -13,4 +13,5 @@ provider "aws" {
 
 resource "aws_ecr_repository" "eks-images" {
   name = "eks-images"
+  force_delete = true
 }
